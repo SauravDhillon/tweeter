@@ -6,7 +6,7 @@
 /* Header styling */
 .new-tweet h2 {
   font-family: 'Bungee', sans-serif;
-  font-size: 30px;
+  font-size: 35px;
   font-weight: 200;
   display: flex;
   justify-content: center;
@@ -29,6 +29,7 @@
   width: 100%;
   border: none;
   border-bottom: 2px solid rgba(0, 0, 0, 0.933);
+  padding: 10px;
 }
 
 /* Styling for div tag containing button and counter */
@@ -42,12 +43,21 @@ button[type="submit"] {
   background-color: #4056A1;
   color: white;
   font-family: 'Bungee', sans-serif;
-  font-size: 13px;
+  font-size: 20px;
+  border: none; 
+  cursor: pointer; 
+  padding: 10px 20px; 
+}
+
+button[type="submit"]:hover {
+  background-color: #3c4b91; 
+  transform: scale(1.05); 
+  transition: background-color 0.3s ease, transform 0.3s ease; 
 }
 
 /* Styling for the counter */
 .counter {
   color: #000000ad;
   font-family: 'Bungee', sans-serif;
-  font-size: 15px;
+  font-size: 20px;
 }

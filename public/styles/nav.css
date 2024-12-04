@@ -1,12 +1,17 @@
 /* Style the nav bar*/
 nav {
-  height: 120px; /* Set height of navigation bar to 120px */
-  width: 100%; /* Full width of the viewport */
-  background-color: #4056A1; /*Default background color */
+  height: 120px;
+  /* Set height of navigation bar to 120px */
+  width: 100%;
+  /* Full width of the viewport */
+  background-color: #4056A1;
+  /*Default background color */
   color: #FFFFFF;
   display: flex;
-  justify-content: space-between; /* Space between the left and right content */
-  padding: 1.5em; /* Adding 1.5em space on the left and right of content */
+  justify-content: space-between;
+  /* Space between the left and right content */
+  padding: 1.5em;
+  /* Adding 1.5em space on the left and right of content */
   position: fixed;
   top: 0px;
 }
@@ -21,8 +26,9 @@ nav span {
 .tweet-button {
   display: flex;
   flex-direction: column;
-  align-items: center; 
+  align-items: center;
 }
+
 /* */
 /* Style for the "Write a new tweet" text */
 .tweet-button span {
@@ -30,11 +36,11 @@ nav span {
   font-size: 1.0em;
   font-weight: 200;
   color: #FFFFFF;
-  margin-bottom: 5px; 
+  margin-bottom: 5px;
 }
 
 /* Style for the angle double down icon*/
 .tweet-button i {
-  font-size: 0.8em; 
+  font-size: 0.8em;
   color: #fd4508;
 }
