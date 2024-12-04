@@ -1,3 +1,4 @@
+/* Style the nav bar*/
 nav {
   height: 120px; /* Set height of navigation bar to 120px */
   width: 100%; /* Full width of the viewport */
@@ -8,25 +9,29 @@ nav {
   padding: 1.5em; /* Adding 1.5em space on the left and right of content */
 }
 
+/* Style the span inside nav */
 nav span {
   font-family: 'Bungee', sans-serif;
   font-size: 2.0em;
 }
 
-.content-on-right {
+/* Style the tweet button container */
+.tweet-button {
   display: flex;
   flex-direction: column;
-  align-items: center; /*Align items to the right*/
+  align-items: center; 
 }
 /* */
-.content-on-right span {
+/* Style for the "Write a new tweet" text */
+.tweet-button span {
   font-family: 'Source Sans 3', sans-serif;
   font-size: 1.0em;
   color: #FFFFFF;
   margin-bottom: 5px; 
 }
 
-.content-on-right i {
+/* Style for the angle double down icon*/
+.tweet-button i {
   font-size: 0.8em; 
   color: #fd4508;
 }
