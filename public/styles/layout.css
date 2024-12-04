@@ -22,6 +22,11 @@ body {
   padding-top: 120px;
 }
 
+main {
+  width: 90%; /* 90% width of its parent */
+  margin: 0 auto;  /* Center align horizontally */
+  background-color: cornsilk;
+}
 /*
  * Additional CSS can be defined below or in other CSS files, as per instructions
  */

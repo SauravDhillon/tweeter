@@ -1,5 +1,6 @@
 header {
   width: 100%;  /* Full width of the container */
+  height: 400px;
   display: flex;
   flex-direction: column; /* Stack avatar and user vertically */
   justify-content: center; /* Center vertically */
@@ -8,6 +9,7 @@ header {
   background-image: url("/images/black-linen.png");
   background-size: cover;
 }
+
 .avatar {
   display: flex;
   justify-content: center;
@@ -18,8 +20,8 @@ header {
   font-family: 'Source Sans 3', sans-serif;
   font-weight: 150;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
   color: white;
-  
+  margin-top: 5px; 
 }
