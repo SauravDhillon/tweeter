@@ -1,0 +1,53 @@
+/* Section styling */
+.new-tweet {
+  background-color: inherit;
+}
+
+/* Header styling */
+.new-tweet h2 {
+  font-family: 'Bungee', sans-serif;
+  font-size: 30px;
+  font-weight: 200;
+  display: flex;
+  justify-content: center;
+}
+
+/* Styling for the label */
+.new-tweet label {
+  font-family: 'Source Sans 3', sans-serif;
+  font-size: 25px;
+  font-weight: lighter;
+  display: flex;
+  justify-content: flex-start;
+}
+
+/* Styling for the textarea */
+#tweet-text {
+  font-size: 16px;
+  margin-bottom: 5px;
+  background-color: inherit;
+  width: 100%;
+  border: none;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.933);
+}
+
+/* Styling for div tag containing button and counter */
+.new-tweet div {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Style for the tweet button */
+button[type="submit"] {
+  background-color: #4056A1;
+  color: white;
+  font-family: 'Bungee', sans-serif;
+  font-size: 13px;
+}
+
+/* Styling for the counter */
+.counter {
+  color: #000000ad;
+  font-family: 'Bungee', sans-serif;
+  font-size: 15px;
+}
