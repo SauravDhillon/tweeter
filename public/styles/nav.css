@@ -5,9 +5,7 @@ nav {
   color: #FFFFFF;
   display: flex;
   justify-content: space-between; /* Space between the left and right content */
-  flex-wrap: wrap;
   padding: 1.5em; /* Adding 1.5em space on the left and right of content */
-  box-sizing: border-box;
 }
 
 nav span {
