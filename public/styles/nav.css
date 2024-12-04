@@ -7,12 +7,14 @@ nav {
   display: flex;
   justify-content: space-between; /* Space between the left and right content */
   padding: 1.5em; /* Adding 1.5em space on the left and right of content */
+  position: fixed;
+  top: 0px;
 }
 
 /* Style the span inside nav */
 nav span {
   font-family: 'Bungee', sans-serif;
-  font-size: 2.0em;
+  font-size: 1.5em;
 }
 
 /* Style the tweet button container */
@@ -26,6 +28,7 @@ nav span {
 .tweet-button span {
   font-family: 'Source Sans 3', sans-serif;
   font-size: 1.0em;
+  font-weight: 200;
   color: #FFFFFF;
   margin-bottom: 5px; 
 }
