@@ -1,0 +1,58 @@
+/* Styling for individual tweet */
+.tweet {
+  border: 3px solid rgba(0, 0, 0, 0.881);
+  padding: 15px;
+  margin-bottom: 30px;
+  background-color: inherit;
+  transition: box-shadow 0.3s ease;
+}
+
+/*Styling for tweet header elements */
+.tweet header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.tweets-user-info {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.tweet hr {
+  background-color: 5px solid black;
+}
+
+.tweet:hover {
+  box-shadow: 7px 7px rgba(137, 154, 232, 0.5);
+}
+
+/* Styling for user-id class*/
+.user-id {
+  font-weight: lighter;
+}
+
+/* Styling for text inside tweet */
+.tweet p {
+  font-size: 18px;
+  font-family: 'Source Sans 3', sans-serif;
+}
+
+/* Styling for tweet footer*/
+.tweet footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+}
+
+/* Styling for tweet footer icons*/
+.tweet-icons i {
+  margin-left: 10px;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.tweet-icons i:hover {
+  color: #f2b61d;
+}

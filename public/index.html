@@ -25,6 +25,7 @@
   <link rel="stylesheet" href="/styles/nav.css" type="text/css" />
   <link rel="stylesheet" href="/styles/header.css" type="text/css" />
   <link rel="stylesheet" href="/styles/new-tweet.css" type="text/css" />
+  <link rel="stylesheet" href="/styles/tweet.css" type="text/css" />
 
   <!-- External JS -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -44,7 +45,7 @@
     </div>
   </nav>
   <!--Header content-->
-  <header>
+  <header class="main-header">
     <div class="avatar">
       <img src="/images/profile-hex.png">
     </div>
@@ -67,24 +68,54 @@
         </div>
       </form>
     </section>
-    <h1>Lorem Ipsum</h1>
-    <p>The classic Latin passage that just never gets old, enjoy as much (or as little) lorem ipsum as you can handle
-      with our easy to use filler text generator.
 
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-      magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-      consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-    </p>
-
-    <h2>Hipster Ipsum</h2>
-    <p>A handcrafted, small-batch, artisinal pour-over version of the classic lorem ipsum generator, Hipster Ipsum will
-      give your mocks that blue collar touch.
-
-      Lorem ipsum dolor amet mustache knausgaard +1, blue bottle waistcoat tbh semiotics artisan synth stumptown
-      gastropub cornhole celiac swag. Brunch raclette vexillologist post-ironic glossier ennui XOXO mlkshk godard
-      pour-over blog tumblr humblebrag. Blue bottle put a bird on it twee prism biodiesel brooklyn. Blue bottle ennui
-      tbh succulents.
-    </p>
+    <!-- Section for Tweets -->
+    <section class="tweets-container">
+      <!-- Dummy Tweet 1 -->
+      <article class="tweet">
+        <header>
+          <div class="tweets-user-info">
+            <img src="https://i.imgur.com/73hZDYK.png" alt="Newton Avatar">
+            <p>Newton</p>
+          </div>
+          <div class="user-id">
+            <p>@SirIsaac</p>
+          </div>
+        </header>
+        <p>If I have seen further it is by standing on the shoulders of giants</p>
+        <hr>
+        <footer>
+          <p>10 days ago</p>
+          <div class="tweet-icons">
+            <i class="fa-solid fa-flag"></i>
+            <i class="fa-solid fa-retweet"></i>
+            <i class="fa-solid fa-heart"></i>
+          </div>
+        </footer>
+      </article>
+      <!-- Dummy Tweet 2 -->
+      <article class="tweet">
+        <header>
+          <div class="tweets-user-info">
+            <img src="https://i.imgur.com/nlhLi3I.png" alt="Descartes Avatar">
+            <p>Descartes</p>
+          </div>
+          <div class="user-id">
+            <p>@rd</p>
+          </div>
+        </header>
+        <p>Je pense , donc je suis</p>
+        <hr>
+        <footer>
+          <p>1 day ago</p>
+          <div class="tweet-icons">
+            <i class="fa-solid fa-flag"></i>
+            <i class="fa-solid fa-retweet"></i>
+            <i class="fa-solid fa-heart"></i>
+          </div>
+        </footer>
+      </article>
+    </section>
   </main>
 </body>
 

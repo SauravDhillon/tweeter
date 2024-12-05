@@ -1,3 +1,4 @@
+//the $(document).ready function ensures that the JavaScript doesn't run until the HTML is fully loaded
 $(document).ready(function () {
   // Targets the <textarea> element inside the .new-tweet section. This is more specific than simply using $("textarea"), which would select all textarea elements on the page 
   $(".new-tweet textarea").on("input", function () {
