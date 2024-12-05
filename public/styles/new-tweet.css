@@ -17,7 +17,6 @@
 .new-tweet label {
   font-family: 'Source Sans 3', sans-serif;
   font-size: 25px;
-  font-weight: lighter;
   display: flex;
   justify-content: flex-start;
   margin-bottom: 10px; /* Adds space below the label */
@@ -69,4 +68,9 @@ button[type="submit"]:hover {
   color: #000000ad;
   font-family: 'Bungee', sans-serif;
   font-size: 20px;
+}
+
+/* Styling for red colored counter */
+.red-counter {
+  color: red;
 }
