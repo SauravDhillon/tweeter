@@ -9,6 +9,20 @@ $(document).ready(function () {
   $('.new-tweet-form').on('submit', function (event) {
     event.preventDefault(); // Prevent default form submission
 
+    const $tweetInput = $(this).find('textarea[name="text"]');
+    const tweetText = $tweetInput.val().trim(); // trim() used to remove leading or trailing whitespace from input
+
+    // Validation check if tweet text is empty or exceed 140 characters
+    if (!tweetText) {
+      alert("Tweet is empty! Please write something before submitting.");
+      return;
+    }
+
+    if (tweetText.length > 140) {
+      alert("Your tweet exceeds maximum character limit of 140");
+      return;
+    }
+
     // Serialize form data into query string
     const formData = $(this).serialize();
 
@@ -27,7 +41,7 @@ $(document).ready(function () {
       },
     });
   });
-  
+
   // Function to create a tweet element 
   const createTweetElement = function (tweet) {
     const $tweet = $(`
