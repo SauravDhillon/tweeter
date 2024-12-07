@@ -5,30 +5,30 @@
  */
 
 $(document).ready(function () {
-  // Function to validate tweet text
-  const isTweetValid = function (tweetText) {
-    if (!tweetText) {
-      alert("Tweet is empty! Please write something before submitting.");
-      return false;
-    }
-  
-    if (tweetText.length > 140) {
-      alert("Your tweet exceeds maximum character limit of 140");
-      return false;
-    }
 
-    return true;
-  };
   //Event listener for the form submission
   $('.new-tweet-form').on('submit', function (event) {
     event.preventDefault(); // Prevent default form submission
 
+    // Hide any visible error messages before validation
+    const $errorMessage = $('.error-message');
+    $errorMessage.slideUp();
+
     const $tweetInput = $(this).find('textarea[name="text"]');
     const tweetText = $tweetInput.val().trim(); // trim() used to remove leading or trailing whitespace from input
 
-    if (!isTweetValid(tweetText)) {
-      return; 
+    // Validate the tweet
+    if (!tweetText) {
+      $errorMessage.find('span').text('Your tweet cannot be empty.');
+      $errorMessage.slideDown();
+      return;
     }
+    if (tweetText.length > 140) {
+      $errorMessage.find('span').text('Too long. Plz rspct our arbitrary limit of 140 chars. #kthxbye.');
+      $errorMessage.slideDown();
+      return;
+    }
+
     // Serialize form data into query string
     const formData = $(this).serialize();
 
@@ -39,8 +39,12 @@ $(document).ready(function () {
       data: formData,
       success: function () {
         console.log('Tweet submitted successfully');
-        loadTweets();
+        loadTweets(); //The loadTweets function is called after a successful tweet submission, which ensures the newly added tweet is displayed without needing to refresh the page.
         $('.new-tweet-form').trigger('reset'); // Clear the form
+
+        // Reset the character count
+        const $counter = $('.new-tweet .counter');
+        $counter.text(140);
       },
       error: function (err) {
         console.log('Error submitting tweet:', err);
@@ -61,7 +65,7 @@ $(document).ready(function () {
               <p>${tweet.user.handle}</p>
             </div>
           </header>
-          <p>${tweet.content.text}</p>
+          <p>${$('<div>').text(tweet.content.text).html()}</p>
           <hr>
           <footer>
             <p>${timeago.format(tweet.created_at)}</p>
@@ -82,7 +86,7 @@ $(document).ready(function () {
     $tweetsContainer.empty(); // Clear the container before appending new tweets
     tweets.forEach((tweet) => {
       const $tweet = createTweetElement(tweet);
-      $tweetsContainer.append($tweet);
+      $tweetsContainer.prepend($tweet);
     });
   };
 
