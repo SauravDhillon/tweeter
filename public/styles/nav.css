@@ -5,7 +5,7 @@ nav {
   /* Full width of the viewport */
   width: 100%;
   /*Default background color */
-  background-color: #4056A1;  
+  background-color: #4056A1; 
   color: #FFFFFF;
   display: flex;
   /* Space between the left and right content */
@@ -45,3 +45,30 @@ nav span {
   color: #fd4508;
 }
 
+@media only screen and (max-width: 1024px) {
+  nav {
+    height: 120px; 
+    width: 100%; /* Full width of the viewport */
+    background-color: rgb(240, 146, 45); /* Same background color as header */
+    background-image: url("/images/black-linen.png"); /* Same background image as header */
+    position: absolute; /* Allow nav to blend with header */
+    top: 0px;
+    background-size: cover; /* Ensure proper scaling of the background */
+    display: flex;
+    justify-content: space-between; /* Space out "Tweeter" and "Write a new tweet" */
+    align-items: center; /* Center content vertically */
+    padding: 1.5em;
+  }
+
+  nav span {
+    font-family: 'Bungee', sans-serif;
+    font-size: 1.5em; 
+    color: #ffffff; 
+  }
+
+  .tweet-button {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+  }
+}

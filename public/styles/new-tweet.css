@@ -32,14 +32,21 @@
 
 /* Styling for the textarea */
 #tweet-text {
-  font-size: 16px;
-  margin-bottom: 5px;
+  font-size: 20px;
   background-color: inherit;
   width: 100%;
+  outline: none;
   border: none;
-  border-bottom: 2px solid rgba(0, 0, 0, 0.933);
-  padding: 10px; /* Adds padding inside the textarea */ 
+  border-bottom: 4px solid rgba(0, 0, 0, 0.600);
+  padding: 20px; /* Adds padding inside the textarea */ 
+  margin-top: 20px;
   margin-bottom: 15px; /* Adds space below the textarea */ 
+  padding-bottom: 0px;
+}
+
+#tweet-text::placeholder {
+  font-weight: bolder;
+  color:rgba(0, 0, 0, 0.600);
 }
 
 /* Styling for div tag containing button and counter */
