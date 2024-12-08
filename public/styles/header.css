@@ -5,7 +5,7 @@
   flex-direction: column; /* Stack avatar and user vertically */
   justify-content: center; /* Center vertically */
   align-items: center; /* Center horizontally */
-  background-color: orange;
+  background-color: rgb(255, 149, 36);
   background-image: url("/images/black-linen.png");
   background-size: cover;
 }
@@ -15,4 +15,13 @@
   font-weight: 150;
   color: white;
   margin-top: 5px; 
+}
+
+@media only screen and (min-width: 1024px){
+  .main-header{
+    width: 25%;
+    float: left;
+    margin-top: 125px;
+    margin-left: 65px;
+  }
 }
