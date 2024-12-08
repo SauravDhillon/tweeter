@@ -26,12 +26,12 @@ body {
 }
 
 main {
-  width: 90%;
   /* 90% width of its parent */
-  margin: 0 auto;
+  width: 90%; 
   /* Center align horizontally */
-  background-color: inherit;
+  margin: 0 auto;
   /*inherit parent property*/
+  background-color: inherit;
 }
 
 /*

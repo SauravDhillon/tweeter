@@ -1,17 +1,18 @@
 /* Style the nav bar*/
 nav {
-  height: 120px;
   /* Set height of navigation bar to 120px */
-  width: 100%;
+  height: 120px;
   /* Full width of the viewport */
-  background-color: #4056A1;
+  width: 100%;
   /*Default background color */
+  background-color: #4056A1;  
   color: #FFFFFF;
   display: flex;
-  justify-content: space-between;
   /* Space between the left and right content */
-  padding: 1.5em;
+  justify-content: space-between;
   /* Adding 1.5em space on the left and right of content */
+  padding: 1.5em;
+  /*Navigation bar to keep stick at top of window*/
   position: fixed;
   top: 0px;
 }
@@ -29,7 +30,6 @@ nav span {
   align-items: center;
 }
 
-/* */
 /* Style for the "Write a new tweet" text */
 .tweet-button span {
   font-family: 'Source Sans 3', sans-serif;

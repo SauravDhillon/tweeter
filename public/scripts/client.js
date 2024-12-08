@@ -15,7 +15,8 @@ $(document).ready(function () {
     $errorMessage.slideUp();
 
     const $tweetInput = $(this).find('textarea[name="text"]');
-    const tweetText = $tweetInput.val().trim(); // trim() used to remove leading or trailing whitespace from input
+    // trim() used to remove leading or trailing whitespace from input
+    const tweetText = $tweetInput.val().trim(); 
 
     // Validate the tweet
     if (!tweetText) {
@@ -39,7 +40,9 @@ $(document).ready(function () {
       data: formData,
       success: function () {
         console.log('Tweet submitted successfully');
-        loadTweets(); //The loadTweets function is called after a successful tweet submission, which ensures the newly added tweet is displayed without needing to refresh the page.
+        //The loadTweets function is called after a successful tweet submission, which ensures the newly added tweet is displayed without needing to refresh the page.
+        loadTweets(); 
+
         $('.new-tweet-form').trigger('reset'); // Clear the form
 
         // Reset the character count
@@ -65,7 +68,7 @@ $(document).ready(function () {
               <p>${tweet.user.handle}</p>
             </div>
           </header>
-          <p>${$('<div>').text(tweet.content.text).html()}</p>
+          <p>${$('<div>').text(tweet.content.text).html()}</p> 
           <hr>
           <footer>
             <p>${timeago.format(tweet.created_at)}</p>
@@ -105,6 +108,7 @@ $(document).ready(function () {
       },
     })
   };
+  //When the page loads for the first time, there is no content in the .tweets-container. Calling loadTweets() retrieves the existing tweets from the server and renders them in the container.
   loadTweets();
 });
 

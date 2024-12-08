@@ -21,7 +21,7 @@
 }
 
 .tweet hr {
-  background-color: 5px solid black;
+  border-bottom: 3px solid rgba(0, 0, 0, 0.73);
 }
 
 .tweet:hover {
