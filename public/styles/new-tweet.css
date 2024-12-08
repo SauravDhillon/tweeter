@@ -76,7 +76,7 @@ button[type="submit"]:hover {
 
 /* Styling for the counter */
 .counter {
-  color: #000000ad;
+  color: rgba(0, 0, 0, 0.600);
   font-family: 'Bungee', sans-serif;
   font-size: 20px;
 }
